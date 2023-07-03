@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TaskFormComponent/>
+  <ToDoListComponent/>
+  <DoneListComponent/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TaskFormComponent from './components/TaskFormComponent.vue'
+import ToDoListComponent from './components/ToDoListComponent.vue'
+import DoneListComponent from './components/DoneListComponent.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TaskFormComponent,
+    ToDoListComponent,
+    DoneListComponent,
   }
 }
 </script>
